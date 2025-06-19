@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            .header{
+                display: flex;
+                width: 100%;
+                height:75px;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(to right, #4fa 0%,#00f2fe 100%);
+            }
+            nav {
+                display: flex;
+                gap: 20px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                font-size: 1rem;
+                padding: 8px 12px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            nav a:hover {
+                background-color: #1abc9c;
+                color: #b70808;
+            }
+
+            /* nav a.active {
+                background-color: #f1c40f;
+                color: #2c3e50;
+            } */
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1>My Website</h1>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+    </body>
+</html>
