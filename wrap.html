@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Wrap and Responsive Example</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      background-color: #d6f93a;
+      padding: 10px;
+      /* margin-top: 200px; */
+      border-radius: 10px;
+    }
+
+    .item {
+      background-color:rgb(91, 189, 254);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      flex: 1 1 150px;
+      border-radius:12px ;
+    }
+    .h{
+        flex: auto;
+        text-align: center;    
+        color: rgb(7, 6, 6);
+    }
+    .con1{
+         background-color:rgb(91, 189, 254);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        flex: 1 1 150px;
+        border-radius:12px ;
+    }
+    .con2{
+        background-color:rgb(91, 189, 254);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        flex: 1 1 150px;
+        border-radius:12px ;
+    }
+    .con3{
+        background-color:rgb(91, 189, 254);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        flex: 1 1 150px;
+        border-radius:12px ;
+    }
+    .con4{
+        background-color:rgb(91, 189, 254);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        flex: 1 1 150px;
+        border-radius:12px ;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="h">Flex Wrap and Responsive Design</h2>
+
+  <div class="container">
+    <div class="con1">
+        <div class="container">
+            <div class="item">1</div>
+        </div>
+    </div>
+    <div class="con2">
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">1</div>
+        </div>
+    </div>
+    <div class="con3">
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">1</div>
+            <div class="item">1</div>
+        </div>
+    </div>
+    <div class="con4">
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">1</div>
+            <div class="item">1</div>
+            <div class="item">1</div>
+        </div>
+    </div>    
+  </div>
+
+</body>
+</html>
