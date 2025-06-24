@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&family=Sevillana&family=WDXL+Lubrifont+JP+N&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
   <title>Sticky Footer Layout</title>
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
     }
 
     html, body {
@@ -20,10 +23,13 @@
       flex-direction: column;
       background-color: #f5f7fa;
       color: #333;
+      font-family: "Sevillana", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
 
     header {
-      background-color: #2c3e50;
+      background-color: #0a7ef3;
       color: white;
       padding: 15px 30px;
       display: flex;
@@ -32,6 +38,9 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      font-family: "Sevillana", cursive;
+        font-weight: 400;
+        font-style: normal;
     }
 
     header h1 {
@@ -43,6 +52,7 @@
       text-decoration: none;
       margin-left: 20px;
       font-size: 1rem;
+      display: flex;
       transition: color 0.3s;
     }
 
@@ -57,7 +67,7 @@
 
     aside {
       width: 200px;
-      background-color: #34495e;
+      background-color: #78b1ea;
       color: white;
       padding: 20px;
       position: sticky;
@@ -81,7 +91,7 @@
     }
 
     footer {
-      background-color: antiquewhite;
+      background-color: rgb(229, 149, 45);
       color: #333;
       text-align: center;
       padding: 10px;
@@ -110,17 +120,50 @@
         top: 0;
       }
     }
+    .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(205, 22, 22);
+        font-size: 14px;
+        width: 60px;
+    }
+
+    .icon-container img {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 5px;
+    }
+
+    .icon-container:hover {
+        color: #f1c40f;
+    }
+
   </style>
 </head>
 <body>
   <header>
     <h1>My Website</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+    <nav style="display: flex; gap: 20px;">
+        <a href="#home" class="icon-container">
+            <img src="home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="Home">
+            <span>Home</span>
+        </a>
+        <a href="#about" class="icon-container">
+            <img src="about.png" alt="About">
+            <span>About Us</span>
+        </a>
+        <a href="#services" class="icon-container">
+            <img src="service.png" alt="Services">
+            <span>Services</span>
+        </a>
+        <a href="#contact" class="icon-container">
+            <img src="contact.png" alt="Contact">
+            <span>Contact</span>
+        </a>
     </nav>
+
   </header>
 
   <div class="block1">
